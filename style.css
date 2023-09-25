@@ -1,0 +1,163 @@
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('SegoeUI.eot');
+	src: local('Segoe UI'), local('SegoeUI'),
+		url('SegoeUI.eot?#iefix') format('embedded-opentype'),
+		url('SegoeUI.woff') format('woff'),
+		url('SegoeUI.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+    background-color: #FAFAF8;
+    margin: 0;
+}
+
+.header {
+    background-color: #64C6CB;
+    height: 133px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px; 
+    padding: 15px;
+    font-family: 'Segoe UI';
+}
+
+.menu_mobile {
+    display: none;
+}
+
+.logo {
+    margin-right: 70px;
+}
+
+.heading {
+    display: flex;
+    justify-content: center; 
+}
+
+h1 {
+    color: #8DD4D8;
+    font-family: 'Pacifico', cursive;
+    font-size: 64px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+p {
+    max-width: 410px;
+    text-align: center;
+    margin: 5px;
+    font-size: 24px;
+    font-family: 'Segoe UI';
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 30px;
+    width: 280px;
+    background-color: #24A0A6;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Segoe UI';
+}
+
+button:hover {
+    background-color: #EBA7BB;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBA7BB;
+    height: 115px;
+    width: 100%;  
+}
+
+.inst, .telegram {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.inst:hover, .telegram:hover {
+    scale: 1.1;
+}
+
+@media all and (max-width: 500px){
+
+    .link {
+        display: none;
+    }
+
+    .menu_mobile {
+        display: block;
+        margin-left: 12px;
+    }
+
+    .logo {
+        width: 108px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .icecream {
+        max-width: 300px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 20px;
+        width: 240px;
+    }
+
+    .inst, .telegram {
+        width: 40px;
+        height: 40px;
+    }    
+}
+
+
+

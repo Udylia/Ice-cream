@@ -1,0 +1,77 @@
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('SegoeUI.eot');
+	src: local('Segoe UI'), local('SegoeUI'),
+		url('SegoeUI.eot?#iefix') format('embedded-opentype'),
+		url('SegoeUI.woff') format('woff'),
+		url('SegoeUI.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+    background-color: #C3E9EC;
+    margin: 0;
+}
+
+.menu {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-item {
+    width: 70%;
+    max-height: 550px;
+}
+
+.menu-item_mob {
+    display: none;
+}
+
+.contact {
+    margin-top: 65px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #EBA7BB;
+    height: 115px;
+    width: 100%;  
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.tel {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Segoe UI';
+    margin-right: 150px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+@media all and (max-width: 500px){
+
+    .contact {
+        justify-content: center;
+    }
+    .tel {
+        margin: 70px;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    .menu-item_mob {
+        display: block;
+        width: 80%;
+        height: auto;
+    }
+    
+    .menu-item {
+        display: none;
+    }
+}
+
+
